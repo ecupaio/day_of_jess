@@ -1,0 +1,118 @@
+//Custom Styles
+//Use this sheet to add your custom touches to the core scss. Brand colors are listed below:
+//$brand_lt_blue
+//$brand_dk_blue
+//$brand_white
+//$brand_red
+//$brand_yellow
+//$brand_gray
+
+//Theme Colors
+//Use the brand colors for your theme colors
+//Body and Heading text Colors
+$purple: #351330;
+$tan: #E8CAA4;
+$blue: #64908A;
+$dk_purple: #424254;
+$pink:#CC2A41;
+
+$theme_body: $purple;
+$theme_body_link: $brand_lt_blue;
+$theme_body_link_hover: $brand_dk_blue;
+$theme_heading: $blue;
+//Footer Colors
+$theme_footer_bg: $dk_purple;
+$theme_footer_txt: $brand_white; 
+$copyright_link: $brand_lt_blue;
+$copyright_link_hover: $brand_white;
+//Header Colors
+$theme_header_bg: $purple;
+$theme_header_txt: $brand_white; 
+//Button Colors
+$theme_button_bg: $pink;
+$theme_button_txt: $brand_white;
+//BSD Form Colors
+$theme_form_bg: $brand_gray;
+$theme_form_txt: $brand_black;
+$theme_form_btn_bg: $brand_dk_blue;
+$theme_form_btn_txt: $brand_white;
+//Mobile Breakpoints
+$size-largee: 1024px;
+$size-medium: 768px;
+$size-small: 568px;
+//Padding for Sections and Grids
+$gutter-padding: 0.5em 1em;
+$header-padding: 1em;
+$body-padding: 1em 3em;
+$body-padding-mobile: 1em;
+$footer-padding: 1em;
+$transition_type: all .7s ease;
+//Mixins
+@import "mixins";
+@include gridGutters($gutter-padding);	
+@include headerPadding($header-padding);
+@include bodyPadding($body-padding);
+@include footerPadding($footer-padding);
+//Start Theme Customizations below: 
+#wrapper {
+	background: #FFEDBF;
+}
+.toggle-body {
+	display: none;
+	text-align: center;
+	.body-img {
+		min-height: 15em;
+		position: relative;
+		.body-text {
+			text-align: left;
+			position: absolute;
+			bottom: 0;
+			background: rgba($pink,0.7);
+			color: #fff;
+			width: 100%;
+			padding: 1em;
+		}
+	}
+	.next {
+		margin-top: 1em;
+	}
+	.prev {
+		margin-bottom: 1em;
+	}
+}
+
+#breakfast {
+	.body-img {
+		background: url(../min_images/bloodies.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+}
+#massage {
+	.body-img {
+		background: url(../min_images/massage.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+}
+#lunch {
+	.body-img {
+		background: url(../min_images/oysters.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+}
+#doggos {
+	.body-img {
+		background: url(../min_images/doggos.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+}
+#drinks {
+	.body-img {
+		background: url(../min_images/gin.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+}
