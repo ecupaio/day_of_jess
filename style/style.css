@@ -115,7 +115,7 @@ Either pass the px number through individually, or set it as a variable */
   .toggle-body.active {
     display: block; }
   .toggle-body .body-img {
-    min-height: 20em;
+    min-height: 100vh;
     position: relative; }
     .toggle-body .body-img .body-text {
       text-align: left;
