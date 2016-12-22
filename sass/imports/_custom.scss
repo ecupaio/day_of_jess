@@ -66,14 +66,14 @@ $transition_type: all .7s ease;
 		display: block;
 	}
 	.body-img {
-		min-height: 100vh;
+		height: 100vh;
 		position: relative;
 		.body-text {
 			text-align: left;
 			position: absolute;
 			top: 0;
 			left: 0;
-			background: rgba($blue,0.7);
+			
 			color: #fff;
 			height: 100%;
 			width: 100%;
@@ -157,7 +157,7 @@ $transition_type: all .7s ease;
 	.body-img {
 		background: $purple;
 		.body-text {
-			
+			background: transparent;
 		}
 	}
 }
