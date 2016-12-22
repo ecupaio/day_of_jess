@@ -11,10 +11,11 @@
 //Use the brand colors for your theme colors
 //Body and Heading text Colors
 $purple: #351330;
-$tan: #E8CAA4;
+$tan: #FFEDBF;
 $blue: #64908A;
 $dk_purple: #424254;
 $pink:#CC2A41;
+$green: #79BD9A;
 
 $theme_body: $purple;
 $theme_body_link: $brand_lt_blue;
@@ -59,22 +60,31 @@ $transition_type: all .7s ease;
 }
 
 .toggle-body {
-	display: none;
+	//display: none;
 	text-align: center;
 	&.active {
 		display: block;
 	}
 	.body-img {
-		min-height: 15em;
+		min-height: 20em;
 		position: relative;
 		.body-text {
 			text-align: left;
 			position: absolute;
 			top: 0;
-			background: rgba($pink,0.7);
+			left: 0;
+			background: rgba($blue,0.7);
 			color: #fff;
+			height: 100%;
 			width: 100%;
 			padding: 1em;
+			p {
+				font-size: 1.25em
+			}
+			h1 {
+				margin-top: 0;
+				color: #fff;
+			}
 		}
 	}
 	.next {
@@ -84,12 +94,22 @@ $transition_type: all .7s ease;
 		margin-bottom: 1em;
 	}
 }
-
+#intro {
+	.body-img {
+		background: $pink;
+		.body-text {
+			background: transparent;
+		}
+	}	
+}
 #breakfast {
 	.body-img {
 		background: url(../min_images/bloodies.jpg);
 		background-position: center center;
 		background-size: cover;
+		.body-text {
+			background: rgba($pink,0.7);
+		}
 	}
 }
 #massage {
@@ -97,6 +117,9 @@ $transition_type: all .7s ease;
 		background: url(../min_images/massage.jpg);
 		background-position: center center;
 		background-size: cover;
+		.body-text {
+			background: rgba($dk_purple,0.7);
+		}
 	}
 }
 #lunch {
@@ -104,6 +127,10 @@ $transition_type: all .7s ease;
 		background: url(../min_images/oysters.jpg);
 		background-position: center center;
 		background-size: cover;
+		.body-text {
+			
+			background: rgba($blue,0.7);
+		}
 	}
 }
 #doggos {
@@ -111,6 +138,9 @@ $transition_type: all .7s ease;
 		background: url(../min_images/doggos.jpg);
 		background-position: center center;
 		background-size: cover;
+		.body-text {
+			background: rgba($purple,0.7);
+		}
 	}
 }
 #drinks {
@@ -118,5 +148,16 @@ $transition_type: all .7s ease;
 		background: url(../min_images/gin.jpg);
 		background-position: center center;
 		background-size: cover;
+		.body-text {
+			background: rgba($green,0.8);
+		}
+	}
+}
+#outro {
+	.body-img {
+		background: $purple;
+		.body-text {
+			
+		}
 	}
 }

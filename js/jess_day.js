@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.start').click(function(){
+	/*$('.start').click(function(){
 		$('#breakfast .toggle-body').addClass('active');
 		if ($('#breakfast').is(':visible')) {
 			$('html, body').animate({
@@ -30,6 +30,12 @@ $(document).ready(function(){
 				scrollTop: $(this).parents('.toggle').prev().offset().top
 			});	
 		}
+	});*/
+	$('.slider').slick({
+		dots: false,
+    	prevArrow: false,
+    	nextArrow: false,
+    	infinite: false
 	});
 
 });
